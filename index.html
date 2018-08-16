@@ -42,41 +42,44 @@
 	</header>
 	<div class="block_content">
 		<div class="side_bar">
-			<div class="menu">
-				<ul class="icons">
-					<li>
-					<img src="img/icons/Feed.png" alt="">
-					</li>
-					<li>
-					<img src="img/icons/Ask.png" alt="">
-					</li>
-					<li>
-					<img src="img/icons/Companies.png" alt="">
-					</li>
-					<li>
-					<img src="img/icons/Services.png" alt="">
-					</li>
-				</ul>
-				<ul class="title_icon">
-					<li>
-						<p>Feed</p>
-					</li>
-					<li>
-						<p>Ask a Colleague</p>
-					</li>
-					<li>
-						<p>Companies</p>
-					</li>
-					<li>
-						<p>Service Directory</p>
-					</li>
-				</ul>
+			<div class="box">
+				<div class="menu">
+					<ul class="icons">
+						<li>
+							<img src="img/icons/Feed.png" alt="">
+						</li>
+						<li>
+							<img src="img/icons/Ask.png" alt="">
+						</li>
+						<li>
+							<img src="img/icons/Companies.png" alt="">
+						</li>
+						<li>
+							<img src="img/icons/Services.png" alt="">
+						</li>
+					</ul>
+					<ul class="title_icon">
+						<li>
+							<p>Feed</p>
+						</li>
+						<li>
+							<p>Ask a Colleague</p>
+						</li>
+						<li>
+							<p>Companies</p>
+						</li>
+						<li>
+							<p>Service Directory</p>
+						</li>
+					</ul>
+				</div>
+				<div class="promo">
+					<p class="title">Advertisement</p>
+					<img src="img/promo_left.png" alt="">
+					<p class="promo_text">Ads By Denteez.com</p>
+				</div>
 			</div>
-			<div class="promo">
-				<p class="title">Advertisement</p>
-				<img src="img/promo_left.png" alt="">
-				<p class="promo_text">Ads By Denteez.com</p>
-			</div>
+
 			<div class="companies">
 				<div class="block_nav">
 					<div><a href="" class="light_font"> Featured Companies</a></div>
@@ -309,25 +312,16 @@
     			error: function(respond,type,message) {
     				console.log(respond,type,message);
     				modal({
-				type: 'error',
-				title: 'Error',
-				text: message,
+						type: 'error',
+						title: 'Error',
+						text: message,
 
-			});
-    	
-
-  // 			$( document ).ready(function(){
-		// 	modal({
-		// 		type: 'error',
-		// 		title: 'Error',
-		// 		text: 'A simple error message!',
-
-		// 	});
-		// });
-    	}
+					});
+    		
+    			}
 
 
-			}
+				}
 			);
 
 		});	
