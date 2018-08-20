@@ -17,7 +17,8 @@ a,p,ul {
 	padding: 0;
 }
 a {
-  text-decoration: none; }
+  text-decoration: none;
+   }
   a:hover {
     text-decoration: none; }
 
@@ -412,11 +413,6 @@ h3 {
 .products_2 {
 	margin-bottom: 22px;
 }
-.promo_left {
-	padding-top: 18px;
-	border-top: 1px solid #e0e2e6;
-	border-bottom: none;
-}
 
 .promo_left img {
 	height: 305px;
@@ -469,6 +465,9 @@ h3 {
 	
 }
 @media only screen and (max-width : 655px) {
+	.service_box {
+		padding: 15px 0 0;
+	}
  	.top_menu {
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
@@ -554,3 +553,79 @@ h3 {
 		margin-bottom: 20px;
 	}
 }	
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+}
+
+.modal.show {
+    visibility: visible;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1001;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+
+.modal .message {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 300px;
+    min-width: 200px;
+    height: 200px;
+    background-color: #537523;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.modal .message .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+}
+button.close {
+    margin: 20px 10px 0 0;
+    padding: 5px 10px;
+    border: none;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    background-color: #fff; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: 900;
+    color: #537523;
+}
