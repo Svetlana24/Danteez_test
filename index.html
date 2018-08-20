@@ -293,6 +293,7 @@
 	<script type="text/javascript">
 		"use strict";
 
+<<<<<<< HEAD
 		function CreateRequest() {
        		var xhr = false;
 
@@ -307,6 +308,25 @@
         		}    
         		catch (CatchException) {
              		xhr = new ActiveXObject("Msxml2.XMLHTTP");
+=======
+		jQuery( document ).ready(function($) {
+    		$.ajax(
+    		{
+    			url: 'httpS://504080.com/api/v1/services/categories',
+   				dataType : "json",                   
+    			success: function (data, textStatus) {
+     				console.log(data, textStatus);
+    			},
+    			error: function(respond,type,message) {
+    				console.log(respond,type,message);
+    				modal({
+						type: 'error',
+						title: 'Error',
+						text: message,
+
+					});
+    		
+>>>>>>> 997bde5e6feae55e56f98a427ad47372e33186d0
     			}
     		}
  
@@ -332,7 +352,12 @@
                     message = modal.getElementsByClassName('text')[0],
                     close = modal.getElementsByClassName('close')[0];
 
+<<<<<<< HEAD
                 close.addEventListener('click', closeModal);
+=======
+				}
+			);
+>>>>>>> 997bde5e6feae55e56f98a427ad47372e33186d0
 
     			message.innerHTML = 'Error: ' + (this.status ? this.statusText : 'Request failed');
     			modal.className += ' show';
